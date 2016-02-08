@@ -75,3 +75,17 @@
   font-size: 1em;
   font-weight: 300;
 }
+
+#myCalculator main p::after {
+  content: 'w';
+}
+
+#myCalculator main p + p::before {
+  content: 'RM';
+}
+
+#myCalculator main p + p::after {
+  content: 'per year';
+  color: rgba(255,255,255,.5);
+  padding-left: 4px;
+}

@@ -1,4 +1,3 @@
-/* JavaScript Document */
 (function() {
   var app = angular.module('myCalculator', []);
 

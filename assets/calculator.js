@@ -1,5 +1,15 @@
 /* JavaScript Document */
+(function() {
+  var app = angular.module('myCalculator', []);
 
-/* Script goes here */
+  app.controller('CalculatorController', ['$scope', function($scope){
+    console.log('Heyya Mother Fuckah !!');
+    $scope.lumenOptions = [375, 600, 900, 1125, 1600];
+    $scope.currentLumens = 600;
+    $scope.currentCost = 12;
+    $scope.currentHours = 3;
+    $scope.totalDays = 365;
+  }]);
+})();
 
 

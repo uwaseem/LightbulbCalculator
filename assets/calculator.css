@@ -152,3 +152,34 @@
 #myCalculator form select::-ms-expand {
   display: none;
 }
+
+@media screen and (max-width: 500px) {
+  #myCalculator {
+    font-size: 15px;
+  }
+
+  #myCalculator main section {
+    background-size: 45px 71px;
+    padding-top: 80px;
+  }
+
+  #myCalculator main h4 {
+    margin: 0;
+    font-size: .75em;
+    letter-spacing: 0;
+  }
+
+  #myCalculator main p {
+    font-size: 1.1em;
+  }
+
+  #myCalculator main p + p {
+    font-size: 1em;
+  }
+
+  #myCalculator main p + p::after {
+    display: block;
+    margin-top: -10px;
+    color: #fff;
+  }
+}

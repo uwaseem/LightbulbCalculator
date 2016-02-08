@@ -64,3 +64,14 @@
   margin: 0 0 5px 0;
   text-transform: uppercase;
 }
+
+#myCalculator main p {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#myCalculator main p + p {
+  font-size: 1em;
+  font-weight: 300;
+}

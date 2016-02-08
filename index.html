@@ -15,28 +15,28 @@
           <div>
             <h4>Incandescent</h4>
             <p>{{incWattage}}</p>
-            <p>13.4</p>
+            <p>{{incCost}}</p>
           </div>
         </section>
         <section class='hal'>
           <div>
             <h4>Halogen</h4>
             <p>{{halWattage}}</p>
-            <p>9.46</p>
+            <p>{{halCost}}</p>
           </div>
         </section>
         <section class='cfl'>
           <div>
             <h4>CFL</h4>
             <p>{{cflWattage}}</p>
-            <p>3.07</p>
+            <p>{{cflCost}}</p>
           </div>
         </section>
         <section class='led'>
           <div>
             <h4>LED</h4>
             <p>{{ledWattage}}</p>
-            <p>2.63</p>
+            <p>{{ledCost}}</p>
           </div>
         </section>
       </main>
@@ -50,12 +50,12 @@
         <div>
           <h4>kWh</h4>
           <p>Kilowatt-<br>hour cost</p>
-          <input type='number' ng-model='currentCost' value={{currentCost}}> cents
+          <input ng-change='calculate()' type='number' ng-model='currentCost' value={{currentCost}}> cents
         </div>
         <div>
           <h4>Hours</h4>
           <p>Usage <br>per day</p>
-          <input type='number' ng-model='currentHours' value={{currentHours}}>
+          <input ng-change='calculate()' type='number' ng-model='currentHours' value={{currentHours}}>
         </div>
       </form>
     </div>

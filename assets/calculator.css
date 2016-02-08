@@ -89,3 +89,27 @@
   color: rgba(255,255,255,.5);
   padding-left: 4px;
 }
+
+#myCalculator form {
+  background-color: #000;
+  margin: 0;
+  padding: 10px 0;
+}
+
+#myCalculator form br {
+  display: none;
+}
+
+#myCalculator form > div {
+  color: #fff;
+  width: 33%;
+  float: left;
+  text-align: center;
+  padding: 10px 0 5px 0;
+}
+
+#myCalculator form::after {
+  content: '';
+  display: block;
+  clear: both;
+}
